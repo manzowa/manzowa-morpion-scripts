@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Morpion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://manzowa.com/styles/manzowa.min.css">
+</head>
+
+<body>
+    <div class="morpion mo-fx-d mo-p-1">
+        <h2> Morpion </h2>
+        <p>
+            Le jeu commence en appuyant simplement sur la case <br />
+            &nbsp; &nbsp;-Le premier joueur commence comme <b><i>Joueur X </i></b><br />
+            &nbsp; &nbsp;-Et deuxième joueur en tant que <b><i>Joueur O</i></b>
+        </p>
+        <div class="morpion-ui mo-fx-d mo-bg-warning mo-mt-2 mo-p-1 ">
+            <div class="row mo-fx-d">
+                <input type="text" class="cell mo-fx-d" x=0 y=0 key=1 readonly>
+                <input type="text" class="cell mo-fx-d" X=0 y=1 key=2 readonly>
+                <input type="text" class="cell mo-fx-d" x=0 y=2 key=3 readonly>
+            </div>
+            <div class="row mo-fx-d">
+                <input type="text" class="cell mo-fx-d" x=1 y=0 key=4 readonly>
+                <input type="text" class="cell mo-fx-d" x=1 y=1 key=5 readonly>
+                <input type="text" class="cell mo-fx-d" x=1 y=2 key=6 readonly>
+            </div>
+            <div class="row mo-fx-d">
+                <input type="text" class="cell mo-fx-d" x=2 y=0 key=7 readonly>
+                <input type="text" class="cell mo-fx-d" x=2 y=1 key=8 readonly>
+                <input type="text" class="cell mo-fx-d" x=2 y=2 key=9 readonly>
+            </div>
+        </div>
+        <button class="reset mo-btn mo-btn-default mo-mt-3" id="resetID" type="button">RESET</button>
+        <p class="mo-mt-2 mo-txt-primary mo-ft-weight-bold" id="printID"></p>
+    </div>
+    <script src="morpion.js"></script>
+</body>
+
+</html>
